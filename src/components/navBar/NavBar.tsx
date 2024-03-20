@@ -11,6 +11,7 @@ function NavBar() {
                     </div>
 
                     <div className='flex gap-3 cursor-pointer'>
+                    <Link to='/login' className='hover:bg-[#5A1F21] py-1 px-4 rounded-3xl duration-300'>Login</Link>
                         <Link to='/home' className='hover:bg-[#5A1F21] py-1 px-4 rounded-3xl duration-300'>Home</Link>
                         <Link to='/categorias' className='hover:bg-[#5A1F21] py-1 px-4 rounded-3xl duration-300'>Categorias</Link>
                         <Link to='/cadastroCategoria' className='hover:bg-[#5A1F21] py-1 px-4 rounded-3xl duration-300'>Cadastrar Categoria</Link>

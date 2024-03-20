@@ -1,8 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://farmacia-ug0p.onrender.com/'
+    baseURL: 'http://localhost:8080/'
 })
+
+export const login = async(url: string, dados: Object, setDados: Function) => {
+    const resposta = await api.post(url, dados)
+    setDados(resposta.data)
+}
 
 export const buscar = async (url: string, setDados:Function) => {
     const response = await api.get(url)
